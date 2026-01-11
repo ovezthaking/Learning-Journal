@@ -14,7 +14,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid black; /*dev*/
+    /* border: 1px solid black; dev */
     padding: 2.5vh 3vh;
 }
 
@@ -171,7 +171,42 @@ footer p {
     font-size: 0.75rem;
 }
 
+.about {
+    padding: 4vh;
+    
+}
+
+#about-intro{
+    margin-bottom: 10vh;
+}
+
+.about img{
+    border-radius: 50%;
+    width: 25vh;
+}
+
+.about-text {
+    margin-top: 5vh;
+}
+
+
 @media (min-width: 820px) {
+    header {
+        padding: 5vh 10vh 5vh 4vh;
+    }
+
+    h1 {
+        font-size: 3.5vh;
+    }
+
+    nav {
+        font-size: 3vh;
+    }
+
+    header img {
+        width: 5vh;
+        margin-right: 1.5vh;
+    }
 
     .articles {
         display: grid;
@@ -183,5 +218,24 @@ footer p {
 
     article:nth-child(4), article:nth-child(5), article:nth-child(6) {
         display: inline;
+    }
+
+    .about img{
+        float: left;
+    }
+    
+    #about-intro{
+        display: flex;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    #about-intro div {
+        flex: 1;
+    }
+
+    .about-text {
+        margin: 0 auto;
+        width: 170vh;
     }
 }
